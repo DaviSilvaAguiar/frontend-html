@@ -1,51 +1,29 @@
-# Alura - Imersão back-end
+# InstaBytes - Frontend
 
-Este é o repositório do front-end do projeto.
+Este é o frontend de um projeto baseado na ideia de um Instagram fictício. O projeto foi originalmente criado como parte de um curso da Alura, "Imersão back-end", e tem como objetivo demonstrar a integração entre um backend em Node.js e um frontend HTML/CSS.
 
-**IMPORTANTE:** É necessário ter o [Node.js](https://nodejs.org/) instalado em seu computador antes de executar os comandos de instalação e execução do projeto. Versão recomendada: v20.x.x.
+## O que foi alterado:
+Eu realizei algumas modificações no frontend original, como:
+- Alteração do nome do usuário para "InstaBytes".
+- Personalização da página de perfil, incluindo a minha própria foto e nome.
 
-## PASSO 1: Baixe o código do projeto:
+O backend foi implementado de forma independente, utilizando Node.js, e é responsável por gerenciar as publicações e interagir com o banco de dados.
 
-### Opção 1 - Clonando o repositório para o seu perfil no GitHub
+## Funcionalidades do Projeto:
 
-> Para utilizar essa opção é necessário ter o [Git](https://git-scm.com/downloads) instalado e configurado em seu computador. Caso não esteja instalado ou você não tenha certeza, prossiga com a **opção 2** e baixe o .zip do projeto.
+- Página inicial com layout de perfil.
+- Personalização simples do perfil.
+- Página com posts de imagens (a funcionalidade de upload está integrada com o backend).
 
-1. Faça o **fork** do projeto clicando no botão **Fork** na parte superior direita da página;
-2. Faça o **clone** do repositório para seu computador:
-  - Clique no botão **<> Code** e copie o endereço remoto do repositório;
-  - Abra o terminal, navegue até a pasta raiz onde deseja baixar o projeto e execute o comando `git clone <endereço remoto>`;
-  - Você pode acessar a pasta do projeto direto pelo Visual Studio Code, clicando em File > Open Folder e selecionando a pasta do projeto.
+## Backend do Projeto:
 
-### Opção 2 - Baixando um arquivo .zip
+O backend foi desenvolvido separadamente e está em outro repositório chamado [**backend-nodejs**](https://github.com/DaviSilvaAguiar/backend-nodejs), que faz a conexão com o banco de dados MongoDB, gerencia os posts e fornece as rotas para upload de imagens.
 
-1. clique no botão **<> Code** e, em seguida, no botão **Download ZIP**;
-2. uma pasta zipada será baixada para a pasta de downloads determinada pelo seu navegador;
-3. descompacte os arquivos clicando no ícone da pasta zipada e transfira os arquivos para a pasta de projetos de sua preferência.
+## Como rodar o frontend localmente:
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/frontend-html.git
 
+Agradecimentos:
 
-## PASSO 2: Instale o projeto:
-
-### Opção 1 - Utilizando o terminal do Visual Studio Code
-
-1. Abra a pasta do projeto no Visual Studio Code clicando em File > Open Folder e selecionando a pasta do projeto;
-2. Clique em Terminal > New Terminal no menu superior do Visual Studio Code. O terminal deve abrir já direcionando para a pasta correta do projeto;
-3. Execute o comando `npm install` e aguarde a finalização.
-
-### Opção 2 - Utilizando outros terminais
-
-1. Abra o terminal de sua preferência e navegue até a pasta do projeto, utilizando os comandos de navegação como `cd <pasta>`;
-2. Com o prompt apontando para a raiz da pasta do projeto, execute o comando `npm install` e aguarde a finalização.
-
-## PASSO 3: Execute o projeto para subir o servidor local:
-
-Acesse o terminal (do Visual Studio Code ou outro), certifique-se que esteja exibindo a pasta correta do projeto e execute o comando `npm run dev`. O terminal deverá retornar:
-
-```
-> dev
-> npx parcel --port 8000 index.html
-
-Server running at http://localhost:8000
-✨ Built in xxxms
-```
-
-O projeto estará disponível no endereço http://localhost:8000 e você poderá acessá-lo no navegador de sua preferência.
+Projeto original da Alura, com alterações para fins de aprendizado e prática de integração com backend.
